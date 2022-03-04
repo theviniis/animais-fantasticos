@@ -1,14 +1,14 @@
-import ScrollSuave from "./modules/scroll-suave.js";
-import Accordion from "./modules/accordion.js";
-import Tabnav from "./modules/tabnav.js";
-import Modal from "./modules/modal.js";
-import initTooltip from "./modules/tooltip.js";
-import initDropdownMenu from "./modules/dropdown-menu.js";
-import initMenuMobile from "./modules/menu-mobile.js";
-import initFuncionamento from "./modules/funcionamento.js";
-import initFetchAnimais from "./modules/fetch-animais.js";
-import initFetchBitcoin from "./modules/fetch-bitcoin.js";
-import initAnimacaoScroll from "./modules/scroll-animacao.js";
+import ScrollSuave from './modules/scroll-suave.js';
+import Accordion from './modules/accordion.js';
+import Tabnav from './modules/tabnav.js';
+import Modal from './modules/modal.js';
+import Tooltip from './modules/tooltip.js';
+import initDropdownMenu from './modules/dropdown-menu.js';
+import initMenuMobile from './modules/menu-mobile.js';
+import initFuncionamento from './modules/funcionamento.js';
+import initFetchAnimais from './modules/fetch-animais.js';
+import initFetchBitcoin from './modules/fetch-bitcoin.js';
+import initAnimacaoScroll from './modules/scroll-animacao.js';
 
 const scrollSuave = new ScrollSuave('[data-menu="suave"] a[href^="#"]');
 scrollSuave.init();
@@ -29,7 +29,9 @@ const modal = new Modal(
 );
 modal.init();
 
-// initTooltip();
+const tooltip = new Tooltip('[data-tooltip]');
+tooltip.init();
+
 initDropdownMenu();
 initMenuMobile();
 initFuncionamento();
